@@ -45,6 +45,14 @@ public class MathCalcTest {
     }
 
     @Test
+    public void exponentiationTest() throws Exception{
+        assertEquals(4d,calculator.calc("2^2"));
+        assertEquals(8d,calculator.calc("2.0^3"));
+        assertEquals(-32d,calculator.calc("-2^5"));
+        assertEquals(16d,calculator.calc("2^2^2"));
+    }
+    
+    @Test
     public void bracketsTest() throws Exception{
         assertEquals(-10d,calculator.calc("2 * (2 + 3) * -1"));
         assertEquals(41d, calculator.calc("(12 * 4) + 22 / (4 - 2) - 18"));
