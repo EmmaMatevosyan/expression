@@ -15,16 +15,16 @@ public class MathCalcTest {
         assertEquals(0.4d, calculator.calc("0.2 + 0.2"));
         assertEquals(4.2d, calculator.calc("4.0 + 0.2"));
         assertEquals(22.8d, calculator.calc("22 + 0.8"));
-        assertEquals(10d, calculator.calc("  9 + 0.5 + 0.5"));
+        assertEquals(10d, calculator.calc(" 9 + 0.5 + 0.5"));
         assertEquals(22.08d, calculator.calc("20 + 0.04 + 1.04 + 1"));
     }
 
     @Test
     public void subtractionTest() throws Exception{
-        assertEquals(0d,calculator.calc("0.5 - 0.5"));
+        assertEquals(0d,calculator.calc("0.2 - 0.2"));
         assertEquals(1d, calculator.calc("0.5 - -0.5"));
-        assertEquals(1.5d, calculator.calc("  2- 0.5"));
-        assertEquals(0.5d, calculator.calc("1 - 0.5"));
+        assertEquals(1.5d, calculator.calc(" 2- 0.5"));
+        assertEquals(0.5d, calculator.calc(" 1 - 0.5"));
         assertEquals(8d, calculator.calc("  (9 - 0.5) -  0.5"));
     }
 
